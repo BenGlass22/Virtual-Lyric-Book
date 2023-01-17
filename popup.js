@@ -6,11 +6,11 @@ let button;
 
 function setup() {
  createCanvas(windowWidth, windowHeight);
-  bg= loadImage('Images/windows95.jpg')
+  bg= loadImage('windows95.jpg')
   background(bg);
- song = loadSound('media/popup.mp3');    
+ song = loadSound('popup.mp3');    
    for (var i = 0; i < 29; i++) {
-  images[i] = loadImage('Images/Error' + i + '.png');
+  images[i] = loadImage('Error' + i + '.png');
       console.log('Error' + i + '.png');
   button = createButton('Wake Up');
   button.position(windowWidth/2, windowHeight/2);
