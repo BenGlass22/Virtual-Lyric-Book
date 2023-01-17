@@ -19,23 +19,26 @@ background(0);
 function draw() {
   stroke(0, 0, 255);
   strokeWeight(0);
-  fill(255, 204, 0);
+  //fill(255, 204, 0);
+  let words =['i','suppose','therefore', 'that', 'all','things','i','see','are','illusions','i','believe','that','nothing','has','ever', 'existed','of','everything','my','lying','memory','tells','me','i','think','i','have','no','senses','i','believe','that','body','shape','extension','motion', 'location','are','functions','what','is','there','then','that','can','be','taken','as','true','perhaps','only','this','one','thing','that','nothing','at','all','is','certain'];
+  let word = random(words);
   
+ // randR= random(0,255);
+  //randG= random(0,255);
+  //randB = random(0, 255);
   
-  randR= random(0,255);
-  randG= random(0,255);
-  randB = random(0, 255);
+  //fill(randR, randG, randB);
   
-  fill(randR, randG, randB);
-  
-  
+    fill(0,255,51);
+ 
   
   if(mouseIsPressed)
   {
-  text("Simulate This",mouseX,mouseY);
+  text(word,mouseX,mouseY);
     textSize(brushSize);
-  brushSize= brushSize + 1;
-    textAlign(CENTER)
+  brushSize= brushSize + 0.5;
+    textAlign(CENTER);
+    textFont('monospace');  
   }
   else
   {

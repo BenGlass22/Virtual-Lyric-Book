@@ -22,7 +22,8 @@ function draw() {
   background(0,0,0);
   let stepSize = 10;
   capture.loadPixels();
-
+  let words =['I','Am'];
+  let word = random(words);
   
   for(let y = 0; y < capture.height; y+= stepSize) {
     for(let x = 0; x < capture.width; x+= stepSize) {
@@ -42,10 +43,11 @@ function draw() {
       fill(0);
      if(brightness > threshold ) {
  
-      stroke(127.5)
-      fill(255)
-      text('I AM', x, y);
+      //stroke(127.5)
+      fill(0,255,51)
+      text(words, x, y);
       textAlign(CENTER);
+      textFont('monospace', 15);     
      } 
      
       
@@ -59,6 +61,6 @@ function draw() {
     }
   }
   capture.updatePixels();
-  
+ 
 
 }
